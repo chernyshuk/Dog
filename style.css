@@ -253,13 +253,14 @@ header .container{
     position: relative;
 }
 
+
 .best-product__image{
     margin-top: -20px;
 }
 
-.best-product__image:nth-child(2){
+.best-products__item:nth-child(2) .best-product__image{
     margin-top: -30px;
-  }
+}
 
 .best-products__item:before{
     content:'';
