@@ -251,7 +251,6 @@ header .container{
     border-radius: 10px;
     box-shadow: 0px 1px 9px 0px #eeecec;
     position: relative;
-    transition: box-shadow .22s ease-in-out;
 }
 
 .best-product__image{
@@ -261,10 +260,6 @@ header .container{
 .best-product__image:nth-child(2){
     margin-top: -30px;
   }
-
-.best-products__item:hover{
-    box-shadow: 0px 17px 30px -15px #e27b3a40
-}
 
 .best-products__item:before{
     content:'';
