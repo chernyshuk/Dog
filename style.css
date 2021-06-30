@@ -345,6 +345,10 @@ header .container{
     margin: auto;
 }
 
+.popular-product__image:hover{
+    transform: scale(1.2);
+}
+
 .popular-product__title{
     font-size: 1.43rem;
     margin-top: 30px;
