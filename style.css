@@ -97,7 +97,7 @@ h4{
     border: solid 0.5px rgba(226, 122, 58, 0.15);
     font-family: 'Roboto';
     font-weight: 400;
-    transition: transform .30s ease-in-out;
+    transition: transform .15s ease-in-out;
 }
 
 .button:hover{
@@ -106,7 +106,7 @@ h4{
 
 .button:active{
     transform: scale(0.9);
- }
+}
  
 
 .button_orange{
@@ -323,6 +323,10 @@ header .container{
     align-items: center;
 }
 
+.popular-products__item:hover .popular-product__image{
+    transform: scale(1.1);  
+}
+
 .popular-products__item .popular-products__item_large{
     width: calc(50% - 15px);
 }
@@ -353,10 +357,7 @@ header .container{
 
 .popular-product__image{
     margin: auto;
-}
-
-.popular-product__image:hover{
-    transform: scale(1.2);
+    display: block;
 }
 
 .popular-product__title{
