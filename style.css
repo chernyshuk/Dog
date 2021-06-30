@@ -97,11 +97,17 @@ h4{
     border: solid 0.5px rgba(226, 122, 58, 0.15);
     font-family: 'Roboto';
     font-weight: 400;
+    transition: transform .30s ease-in-out;
 }
 
 .button:hover{
-    background-color: #fcc7a6;
+   transform: scale(1.1);
 }
+
+.button:active{
+    transform: scale(0.9);
+ }
+ 
 
 .button_orange{
    background: #E27B3A; 
