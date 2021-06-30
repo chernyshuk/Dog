@@ -374,11 +374,17 @@ header .container{
 
 .dog-care .container{
     display: flex;
+    align-items: center;
     margin-top: 130px;
 }
 
 .dog-care__image{
     margin-left: -75px;
+}
+
+.dog-care__wrapper{
+    
+    margin-left: 97px;
 }
 
 .dog-care__sub-title{
@@ -396,10 +402,13 @@ header .container{
     width: 487px;
     text-align: left;
     line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .dog-care .button_orange{
     width: 189px;
+    margin-right: 30px;
 }
 
 
