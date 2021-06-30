@@ -377,9 +377,9 @@ header .container{
     margin-top: 130px;
 }
 
-
-
-
+.dog-care__image{
+    margin-left: -75px;
+}
 
 .dog-care__sub-title{
     font-family: 'Roboto';
