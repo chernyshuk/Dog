@@ -360,8 +360,11 @@ header .container{
 
 .popular-products__item_large .popular-product__button{
     margin-bottom: 66px;
-    border: solid 0.5px #FFF;
     height: 20px;
+}
+
+.popular-product__button{
+    border: solid 0.5px #FFF;
 }
 
 .popular-products__button{
