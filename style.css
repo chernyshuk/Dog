@@ -369,7 +369,7 @@ header .container{
     align-items: center;  
 }
 
-.popular-product__image-wrapper:hover .popular-product__image{
+.popular-products__item:hover .popular-product__image{
     transform: scale(1.1);  
 }
 
