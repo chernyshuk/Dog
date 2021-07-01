@@ -264,6 +264,12 @@ header .container{
     border-radius: 10px;
     box-shadow: 0px 1px 9px 0px #eeecec;
     position: relative;
+    transition: transform .5s ease-in-out;
+}
+
+.best-products__item:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 7px 12px -10px #cfcfcf;
 }
 
 .best-product__image{
