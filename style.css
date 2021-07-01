@@ -296,7 +296,7 @@ header .container{
     border-radius: 10px;
     box-shadow: 0px 1px 9px 0px #eeecec;
     position: relative;
-    transition: transform .22s ease-in-out;
+    transition: all .22s ease-in-out;
 }
 
 .best-products__item:hover{
