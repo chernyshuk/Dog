@@ -499,12 +499,12 @@ header .container{
     flex-direction: column;
 }
 
-.subscription__image{
+.subscription__item{
     transition: transform 0.22s ease-in-out;
     position: relative;
 }
 
-.subscription__image:hover{
+.subscription__item:hover{
     transform: translateY(-10px);
 }
 
