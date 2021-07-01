@@ -66,6 +66,10 @@ body{
     position: absolute;
 }
 
+ul{
+    list-style: none;
+}
+
 h1{
     font-size: 7.14rem;
     margin-bottom: 45px;
@@ -95,6 +99,7 @@ h3{
 h4{
     font-family: 'Poppins';
     font-weight: 500;
+    font-size: 1.43rem;
 }
 
 .link{
@@ -302,7 +307,6 @@ header .container{
 .best-products__item{
     width: 360px;
     height: 240px;
-    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,7 +374,6 @@ header .container{
 }
 
 .popular-products__list{
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
@@ -378,8 +381,7 @@ header .container{
 .popular-products__item{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .popular-product__image-wrapper:hover .popular-product__image{
@@ -421,7 +423,6 @@ header .container{
 }
 
 .popular-product__title{
-    font-size: 1.43rem;
     margin-top: 30px;
     margin-bottom: 16px;
 }
@@ -490,5 +491,52 @@ header .container{
     margin-right: 30px;
 }
 
+.about-subscription .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 116px;
+}
 
+.about-subscription__list{
+    display: flex;
+}
+
+.about-subscription__title{
+    margin-bottom: 36px;
+    width: 400px;
+    text-align: center;
+}
+
+.subscription__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscription__image{
+    transition: transform 0.22s ease-in-out;
+    position: relative;
+}
+
+.subscription__image:hover{
+    transform: translateY(-10px);
+}
+
+.subscription__title{
+    text-align: center;
+    width: 360px;
+    margin-top: 51px;
+    margin-bottom: 22px;
+}
+
+.subscription__button{
+    border: solid 0.5px #FFF;
+    margin-top: 15px;
+}
+
+.about-subscription__button{
+    width: 131px;
+    margin-top: 46px;
+}
 
