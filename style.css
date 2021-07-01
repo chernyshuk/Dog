@@ -198,7 +198,7 @@ header .container{
 }
 
 .menu__item{
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.20s ease-in-out;
     position: relative;
 }
 
