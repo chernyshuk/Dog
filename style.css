@@ -324,7 +324,7 @@ header .container{
     
 }
 
-.popular-products__item:hover .popular-product__image{
+.popular-product__image-wrapper:hover .popular-product__image{
     transform: scale(1.1);  
 }
 
