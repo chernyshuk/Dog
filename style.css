@@ -59,6 +59,13 @@ body{
     margin: 0 auto;
 }
 
+.vl {
+    border-left: 1px solid #000;
+    height: 120px;
+    margin-left: 950px;
+    position: absolute;
+}
+
 h1{
     font-size: 7.14rem;
     margin-bottom: 45px;
