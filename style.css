@@ -178,12 +178,54 @@ header .container{
     font-weight: 500;
 }
 
+.logo__title{
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.logo__title::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #E27B3A;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.logo__title:hover::before{
+    width: 100%;
+}
+
 .menu{
     list-style: none;
 }
 
 .header__menu{
     display: flex;
+}
+
+.menu__item{
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.menu__item::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #E27B3A;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.menu__item:hover::before{
+    width: 100%;
 }
 
 .menu__item:not(:first-child){
