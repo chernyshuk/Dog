@@ -251,17 +251,16 @@ header .container{
 
 .offer{
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 70px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 179px;
 }
           
 .offer:before{
     content:'';
     position: absolute;
     background: url('assets/offer-bg2.svg') no-repeat right top / cover;
-    height: calc(100% + 80px);
+    height: calc(100% + 150px);
     width: 50%;
     right: 0;
     top: 0;
@@ -272,7 +271,6 @@ header .container{
 .offer .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .offer__image{
@@ -280,12 +278,12 @@ header .container{
    object-position: center;
    width: 620px;
    height: 560px;
-   margin-top: 30px;
+   margin-top: 120px;
    z-index: 2;
 }
 
 .offer__wrapper{
-    margin-top: 128px;
+    margin-top: 210px;
 }
 
 .offer__buttons{
