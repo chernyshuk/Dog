@@ -97,6 +97,11 @@ h4{
     font-weight: 500;
 }
 
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
 .button{
     border-radius: 50px;
     font-size: 16px;
@@ -165,7 +170,7 @@ header .container{
     text-transform: uppercase;
 }
 
-.logo__title{
+.logo__link{
     font-size: 1.57rem;
     font-weight: bold;
     margin-left: 5px;
@@ -181,13 +186,14 @@ header .container{
     display: flex;
 }
 
-.menu__item{
+.menu__item:not(:first-child){
+    margin-left: 60px;
+}
+
+.menu__link{
     font-size: 1.14rem;
     font-family: 'Roboto';
     font-weight: 400;
-}
-.menu__item:not(:first-child){
-    margin-left: 60px;
 }
 
 .header__actions{

@@ -8,17 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header class="header">
+   <header class="header" >
        <div class="container">
             <div class="header__logo logo">
                 <img class="logo__image" src="assets/logo.png" alt="Логотип">
-                <p class="logo__title">Dog</p>
+                <p class="logo__title">
+                    <a class="logo__link link" href="#Header">Dog</a>
+                </p>
             </div>
             <nav class="header__menu menu">
-                <li class="menu__item">Products</li>
-                <li class="menu__item">Dog Care</li>
-                <li class="menu__item">About</li>
-                <li class="menu__item">Popular</li>
+                <li class="menu__item">
+                    <a class="menu__link link" href="#Popular products">Products</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link" href="#Dog care">Dog Care</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link" href="#Services">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link" href="#Services">Popular</a>
+                </li>
             </nav>
             <ul class="header__actions actions">
                 <li class="actions__item">
@@ -33,7 +43,7 @@
             </ul>
         </div>
    </header> 
-   <section class="offer">
+   <section class="offer" id="Header">
        <div class="container">
             <div class="offer__wrapper">
                 <h1 class="offer__title">Dog is my Copilot.</h1>
@@ -73,7 +83,7 @@
 
    <div class="vl"></div>
 
-   <section class="popular-products">
+   <section class="popular-products" id="Popular products">
        <div class="container">
             <h2 class="popular-products__title">Popular Products</h2>
             <p class="popular-products__description description">Lorem ipsum dolor sit, amet consectetur 
@@ -118,7 +128,7 @@
             <button class="popular-products__button button button_white">View All Products</button>  
        </div>
    </section>
-   <section class="dog-care">
+   <section class="dog-care" id="Dog care">
         <div class="container">
             <img class="dog-care__image" src="assets/dog-care.png" alt="Ветеринар">
             <div class="dog-care__wrapper">
