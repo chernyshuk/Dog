@@ -164,7 +164,6 @@ header .container{
     margin-left: 5px;
     font-family: 'Roboto';
     font-weight: 500;
-
 }
 
 .menu{
@@ -238,7 +237,6 @@ header .container{
     margin-top: 45px;
 }
 
-
 .offer__button:not(:last-child){
     margin-right: 20px;
 }
@@ -293,6 +291,7 @@ header .container{
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
+    margin-bottom: 4px;
 }
 
 .popular-products{
