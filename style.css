@@ -119,6 +119,8 @@ h4{
 
 .button:hover{
    transform: scale(1.1);
+   cursor: pointer;
+    
 }
 
 .button:active{
@@ -215,6 +217,7 @@ header .container{
 
 .menu__item:hover::before{
     width: 100%;
+    cursor: pointer;
 }
 
 .menu__item:not(:first-child){
@@ -304,6 +307,7 @@ header .container{
 .best-products__item:hover{
     transform: translateY(-10px);
     box-shadow: 5px 7px 12px -10px #cfcfcf;
+    cursor: pointer;
 }
 
 .best-product__image{
@@ -370,6 +374,7 @@ header .container{
 
 .popular-products__item:hover .popular-product__image{
     transform: scale(1.1);  
+    cursor: pointer;
 }
 
 .popular-products__item .popular-products__item_large{
@@ -505,6 +510,7 @@ header .container{
 
 .subscription__item:hover{
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
 .subscription__title{
