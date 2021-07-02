@@ -535,8 +535,6 @@ header .container{
     width: 100%;
 }
 
-
-
 .subscription__button{
     border: solid 0.5px #FFF;
     margin-top: 15px;
@@ -547,3 +545,69 @@ header .container{
     margin-top: 46px;
 }
 
+.gallery .container{
+    display: flex;
+    margin-top: 120px;
+}
+
+.gallery__title{
+    margin-bottom: 13px; 
+}
+
+.gallery__wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 554px;
+    margin-right: 31px;
+}
+
+.gallery__description{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.gallery__images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__image_small{
+    width: 262px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.gallery__image_small:nth-child(1){
+    background: rgba(144, 10, 8, 0.1);;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery__image_small:nth-child(2){
+    background: rgba(36, 61, 126, 0.1);;
+    margin-bottom: 30px;
+}
+
+.gallery__image_small:nth-child(3){
+    background: rgba(128, 1, 37, 0.1);;
+}
+
+.gallery__image_small:nth-child(4){
+    background:rgba(196, 140, 174, 0.1);
+    margin-left: 30px;
+}
+
+.gallery__image_large{
+    
+    background-color: rgba(196, 21, 75, 0.1);
+
+    border-radius: 10px;
+    width: 555px;
+    height: 509px;
+    margin-bottom: 0;
+}
+
+.gallery__image{
+    margin: auto;
+}
