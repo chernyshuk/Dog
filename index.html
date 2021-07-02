@@ -185,20 +185,20 @@
                 document.getElementsByClassName('header')[0].classList.add('scroll');
             else
                 document.getElementsByClassName('header')[0].classList.remove('scroll');
-           })
+           });
+           document.querySelectorAll('a.menu__link.link, .logo__link.link')
+            .forEach(x => x.addEventListener('click', e => {
+                e.preventDefault();
+                
+                const href = e.currentTarget.getAttribute("href");
+                const offsetTop = document.querySelector(href).offsetTop;
+
+                scroll({
+                    top: offsetTop - 90,
+                    behavior: "smooth"
+                });
+            }));
        }
-
-      
-        document.querySelectorAll('a.menu__link.link').forEach(x => x.addEventListener('click', e => {
-        e.preventDefault();
-        const href = e.currentTarget.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
-
-        scroll({
-            top: offsetTop - 90,
-            behavior: "smooth"
-        });
-    }));
    </script>
 </body>
 </html>
