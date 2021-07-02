@@ -59,8 +59,9 @@ body{
     margin: 0 auto;
 }
 
-.vl {
-    border-left: 1px solid #000;
+.vl::before {
+    content: '';
+    border-left: 1px solid #ebebeb;
     height: 120px;
     margin-left: 950px;
     position: absolute;
