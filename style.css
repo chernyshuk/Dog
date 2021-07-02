@@ -513,12 +513,22 @@ header .container{
     cursor: pointer;
 }
 
+.subscription__item:not(:first-child){
+    margin-left: 30px;
+}
+
 .subscription__title{
     text-align: center;
     width: 360px;
     margin-top: 51px;
     margin-bottom: 22px;
 }
+
+.subscription__description{
+    width: 100%;
+}
+
+
 
 .subscription__button{
     border: solid 0.5px #FFF;
