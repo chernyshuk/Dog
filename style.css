@@ -239,6 +239,12 @@ header .container{
     width: 17px;
     height: 17px;
     margin-left: 40px;
+    transition: scale .22s ease-in-out;
+}
+
+.actions__image:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
 }
 
 .offer{
