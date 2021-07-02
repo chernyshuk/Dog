@@ -615,3 +615,18 @@ header .container{
 .testimonial .container{
     margin-top: 120px;
 }
+
+.connection .container{
+    background: #2E96FF;
+    display: flex;
+    margin-top: 86px;
+    height: 346px;
+}
+
+.connection__title{
+    color: #FFF;
+}
+
+.connection__description{
+    color: #FFF;
+}
