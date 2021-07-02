@@ -611,3 +611,7 @@ header .container{
 .gallery__image{
     margin: auto;
 }
+
+.testimonial .container{
+    margin-top: 120px;
+}
