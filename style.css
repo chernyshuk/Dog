@@ -599,17 +599,17 @@ header .container{
 }
 
 .gallery__image_large{
-    
     background-color: rgba(196, 21, 75, 0.1);
-
     border-radius: 10px;
     width: 555px;
     height: 509px;
     margin-bottom: 0;
 }
 
-.gallery__image{
-    margin: auto;
+.gallery__image-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial .container{
