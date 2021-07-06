@@ -59,12 +59,13 @@ body{
     margin: 0 auto;
 }
 
-.vl::before {
+.popular-products::before {
     content: '';
     border-left: 1px solid #ebebeb;
     height: 120px;
     margin-left: 950px;
     position: absolute;
+    margin-top: -120px;
 }
 
 ul{
