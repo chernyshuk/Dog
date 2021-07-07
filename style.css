@@ -113,8 +113,7 @@ h4{
 
 .button:hover{
    transform: scale(1.1);
-   cursor: pointer;
-    
+   cursor: pointer; 
 }
 
 .button:active{
@@ -565,6 +564,10 @@ header .container{
     width: 100%;
     margin-bottom: 35px;
 }
+.gallery__images{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .gallery__image{
     transition: transform 0.22s ease-in-out;
@@ -572,12 +575,10 @@ header .container{
 
 .gallery__image-wrapper:hover .gallery__image{
     transform: scale(1.1);  
-    cursor: pointer;
 }
 
-.gallery__images{
-    display: flex;
-    flex-wrap: wrap;
+.gallery__image-wrapper:hover{
+    cursor: pointer;
 }
 
 .gallery__image_small{
@@ -634,9 +635,10 @@ header .container{
     border-radius: 10px;
 }
 
+
+
 .connection__wrapper{
     margin-left: 69px;
-    transform: skew(1.5deg, 1.5deg);
     width: 423px;
     margin-right: 96px;
 }
@@ -654,9 +656,32 @@ header .container{
     margin-top: 18px;
 }
 
-.connection__items{
-    transform: skew(1.5deg, 1.5deg);
+.connection__input{
+    height: 70px;
+    width: 373px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    margin-right: 0;
+    padding-left: 21px;
 }
+
+.connection__input::placeholder{
+    color: rgba(23, 12, 4, 0.4);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.14rem;
+}
+.connection__button{
+    height: 70px;
+    width: 115px;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    
+}
+
+/*.connection__button:hover{
+    transform: scale(0.9,0.9);
+}*/
 
 .footer{
     background: #000;
