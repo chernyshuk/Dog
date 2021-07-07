@@ -626,16 +626,24 @@ header .container{
 }
 
 .connection .container{
-    background: #2E96FF;
     display: flex;
     align-items: center;
     margin-top: 86px;
     height: 346px;
-    transform: skew(0, -1.5deg);
-    border-radius: 10px;
+    position: relative;
+    z-index: 10;
 }
 
-
+.connection .container::after{
+    content: '';
+    background: #2E96FF;
+    height: 346px;
+    width: 100%;
+    transform: skew(0, -1.5deg);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
 
 .connection__wrapper{
     margin-left: 69px;
@@ -656,6 +664,10 @@ header .container{
     margin-top: 18px;
 }
 
+.connection__items{
+    display: flex;
+}
+
 .connection__input{
     height: 70px;
     width: 373px;
@@ -663,6 +675,7 @@ header .container{
     border: none;
     margin-right: 0;
     padding-left: 21px;
+    outline: none;
 }
 
 .connection__input::placeholder{
