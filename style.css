@@ -621,8 +621,42 @@ header .container{
     justify-content: center;
 }
 
-.testimonial .container{
-    margin-top: 120px;  
+.testimonials .container{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 82px;
+    filter: drop-shadow(0 8px 20px 0 rgba(0, 0, 0, 0.04));
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.04);
+}
+
+.testimonial__description{
+    color: rgba(23, 12, 4, 0.6);
+    width: 495px;
+    margin: 20px 0;
+}
+
+.testimonial__name{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.71rem;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+
+.testimonial__position{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 0.86rem;
+    color: rgba(23, 12, 4, 0.6);
 }
 
 .connection .container{
@@ -642,7 +676,7 @@ header .container{
     transform: skew(0, -1.5deg);
     border-radius: 10px;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 
 .connection__wrapper{
@@ -676,6 +710,7 @@ header .container{
     margin-right: 0;
     padding-left: 21px;
     outline: none;
+    display: flex;
 }
 
 .connection__input::placeholder{
@@ -683,13 +718,13 @@ header .container{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1.14rem;
+    display: none;
 }
 .connection__button{
     height: 70px;
     width: 115px;
     border-radius: 0 10px 10px 0;
     margin-left: 0;
-    
 }
 
 /*.connection__button:hover{
@@ -697,13 +732,16 @@ header .container{
 }*/
 
 .footer{
-    background: #000;
+    background: #211105;
+    position: relative; 
+}
+
+.footer .container{
     display: flex;
     justify-content: space-between;
     margin-top: 215px;
     padding-top: 60px;
-    padding-bottom: 105px;
-    position: relative;
+    padding-bottom: 105px;   
 }
 
 .footer:before{
@@ -712,13 +750,9 @@ header .container{
     background: url('assets/Polygon1.svg') no-repeat center / cover;
     height: 93px;
     width: 900px;
-    left: calc(50% - 370px);
+    left: calc(50% - 450px);
     top: -85px;
     z-index: 0;
-}
-
-.footer__menu_right{
-    margin-left: 179px;
 }
 
 .brand__title{
@@ -736,6 +770,10 @@ header .container{
     margin-bottom: 37px;
 }
 
+.footer__menu_right .menu__link_footer:last-child{
+    
+}
+
 .colortext{
     color: #E27B3A;
 }
@@ -746,6 +784,7 @@ header .container{
     flex-direction: column;
     margin-top: -60px;
     z-index: 2;
+    
 }
 
 .brand__link {
@@ -781,6 +820,4 @@ header .container{
     margin-left: 25px;
 }
 
-.footer__menu_left{
-    margin-right: 180px;
-}
+
