@@ -566,12 +566,13 @@ header .container{
     margin-bottom: 35px;
 }
 
-.gallery__image-wrapper{
+.gallery__image{
     transition: transform 0.22s ease-in-out;
 } 
 
-.gallery__image-wrapper:hover{
-    transform: translateY(-10px);
+.gallery__image-wrapper:hover .gallery__image{
+    transform: scale(1.1);  
+    cursor: pointer;
 }
 
 .gallery__images{
