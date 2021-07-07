@@ -75,6 +75,7 @@ h2{
     font-size: 2.36rem;
     font-family: 'Poppins';
     font-weight: 500;
+    line-height: 40.6px
 }
 
 h3{
@@ -565,6 +566,14 @@ header .container{
     margin-bottom: 35px;
 }
 
+.gallery__image-wrapper{
+    transition: transform 0.22s ease-in-out;
+} 
+
+.gallery__image-wrapper:hover{
+    transform: translateY(-10px);
+}
+
 .gallery__images{
     display: flex;
     flex-wrap: wrap;
@@ -652,7 +661,21 @@ header .container{
     background: #000;
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 215px;
+    padding-top: 60px;
+    padding-bottom: 105px;
+    position: relative;
+}
+
+.footer:before{
+    content: ''; 
+    position: absolute; 
+    background: url('assets/Polygon\ 1.svg') no-repeat center / cover;
+    height: 93px;
+    width: 900px;
+    left: calc(50% - 370px);
+    top: -85px;
+    z-index: 0;
 }
 
 .footer__menu_right{
@@ -672,13 +695,18 @@ header .container{
 
 .footer__menu .menu__item:not(:last-child){
     margin-bottom: 37px;
+}
 
+.colortext{
+    color: #E27B3A;
 }
 
 .footer__wrapper{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: -60px;
+    z-index: 2;
 }
 
 .brand__link {
@@ -693,7 +721,7 @@ header .container{
     font-weight: 500;
     font-size: 1.86rem;
     margin-top: 12px;
-    margin-bottom: 78px;
+    margin-bottom: 66px;
 }
 
 .footer__network{
@@ -716,6 +744,4 @@ header .container{
 
 .footer__menu_left{
     margin-right: 180px;
-
-
 }
