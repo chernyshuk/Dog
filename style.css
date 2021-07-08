@@ -665,7 +665,7 @@ header .container{
     margin-top: 86px;
     height: 346px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
 
 .connection .container::after{
