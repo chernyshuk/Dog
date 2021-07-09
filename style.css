@@ -720,6 +720,13 @@ header .container{
     font-size: 1.14rem;
     display: none;
 }
+
+.connection__input{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.43rem;
+}
+
 .connection__button{
     height: 70px;
     width: 115px;
