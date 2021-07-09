@@ -759,6 +759,12 @@ header .container{
     color: #FFF;
 }
 
+.footer__menu_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .footer__menu .menu__link{
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Roboto';
