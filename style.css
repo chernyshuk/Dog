@@ -796,8 +796,7 @@ header .container{
     align-items: center;
     flex-direction: column;
     margin-top: -60px;
-    z-index: 2;
-    
+    z-index: 2;  
 }
 
 .brand__link {
@@ -827,6 +826,15 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.22s ease-in-out;
+}
+
+.network__item:hover{
+    transform: scale(1.1);
+}
+
+.button:active{
+    transform: scale(0.9);
 }
 
 .network__item:not(:first-child){
