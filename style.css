@@ -237,6 +237,10 @@ header .container{
     cursor: pointer;
 }
 
+.actions__image:active{
+    transform: scale(0.9);
+}
+
 .offer{
     height: 100vh;
     padding-top: 70px;
