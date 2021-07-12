@@ -755,10 +755,10 @@ header .container{
     content: ''; 
     position: absolute; 
     background: url('assets/Polygon1.svg') no-repeat center / cover;
-    height: 93px;
+    height: 82px;
     width: 900px;
     left: calc(50% - 450px);
-    top: -85px;
+    top: -73px;
     z-index: 0;
 }
 
