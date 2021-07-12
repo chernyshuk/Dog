@@ -881,6 +881,10 @@ header .container{
     transform: scale(1.1);
 }
 
+.network__item:active{
+    transform: scale(0.9);
+}
+
 .button:active{
     transform: scale(0.9);
 }
@@ -888,5 +892,4 @@ header .container{
 .network__item:not(:first-child){
     margin-left: 25px;
 }
-
 
