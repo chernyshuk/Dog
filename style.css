@@ -793,6 +793,7 @@ header .container{
 
 .colortext{
     color: #E27B3A;
+    text-decoration: none;
 }
 
 .footer__wrapper{
