@@ -993,3 +993,89 @@ header .container{
     margin-left: 25px;
 }
 
+
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 621px;
+    }
+
+    h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    header{
+        width: 718px;
+    }
+
+    .offer__image{
+        width: 406px;
+    }
+
+    .best-products__item{
+        width: 227px;
+    }
+
+    .best-product__title{
+        font-size: 18px;
+    }
+
+    .popular-products__list{
+        justify-content: space-between;
+        
+    }
+
+    .popular-products__item:nth-child(2n){
+        margin-left: 15px;
+    }
+
+    .popular-product__image-wrapper, 
+    .popular-products__item_large .popular-product__image-wrapper{
+        width: 303px;
+        height: 304px;
+    }
+
+    .popular-products__item_large .popular-product__image{
+        width: 202px;
+        height: 150px;
+    }
+
+    .dog-care__image{
+        width: 330px;   
+    }
+
+    .dog-care__wrapper{
+        margin-left: 30px;
+        width: 343px;
+    }
+
+    .dog-care__description {
+        width: 343px;
+    }
+
+    .about-subscription__list{
+        flex-wrap: wrap;
+    }
+
+    .subscription__item{
+        width: 281px;
+    }
+
+    .subscription__item:first-child{
+        margin-right: 30px;
+    }
+
+    .gallery .container{
+        flex-wrap: wrap;
+    }
+
+    .gallery__image_large{
+        margin-top: 30px;
+    }
+
+    .connection .container{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
