@@ -870,7 +870,15 @@ header .container{
     width: 30%;
 }
 
-.footer__menu_left{
+.footer__menu_left .menu__item:not(:last-child):hover::before{
+    width: 35%;
+}
+
+.footer__menu_left .menu__item:last-child:hover::before{
+    width: 87%;
+}
+
+.footer__menu_right{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
