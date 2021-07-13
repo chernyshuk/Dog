@@ -646,6 +646,32 @@ header .container{
     align-items: center;
 }
 
+.testimonials__goast,
+.testimonials__wrapper{
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+    width: 555px;
+    height: 292px;
+}
+
+.testimonials__goast{
+    position: absolute;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
+    z-index: -1;
+}
+
+.testimonials__goast:nth-of-type(1){
+    transform: translate(-30px, 50px);
+}
+
+.testimonials__goast:nth-of-type(2){
+    transform: translate(-20px, 60px);
+}
+
+.testimonials__goast:nth-of-type(3){
+    transform: translate(-10px, 70px);
+}
+
 .testimonials__wrapper{
     display: flex;
     flex-direction: column;
@@ -653,9 +679,8 @@ header .container{
     margin-top: 82px;
     position: relative;
     border-radius: 20px;
-    box-shadow: 5px 7px 16px -8px #d3d1d1;
-    width: 555px;
-    height: 272px;
+    background: #fff;
+    z-index: 2;
 }
 
 .testimonials__wrapper::before{
@@ -678,7 +703,27 @@ header .container{
     color: #170C04;
     right: 28px;
     bottom: 28px;
-  
+}
+
+.testimonials__goast:nth-of-type(3)::before{
+    content: ''; 
+    position: absolute; 
+    background: url('assets/testimonials-arrow-u.svg') no-repeat center / cover;
+    width: 13px;
+    height: 24px;
+    color: #000;
+    left: 600px;
+    bottom: 95px;
+}
+
+.testimonials__goast:nth-of-type(3)::after{
+    content: ''; 
+    position: absolute; 
+    background: url('assets/testimonials-arrow-d.svg') no-repeat center / cover;
+    width: 12px;
+    height: 22px;
+    left: 600px;
+    bottom: 50px;
 }
 
 .testimonial__foto{
@@ -783,8 +828,13 @@ header .container{
     transition: all .22s ease-in-out;
 }
 
-.connection__items .connection__button:active{
-    background: rgba(238, 124, 53, 0.8); 
+.connection__button:hover{
+    background: rgb(253, 152, 90); 
+    transform: none;
+}
+
+.connection__button:active{
+    background: rgb(243, 121, 45); 
     transform: none;
 }
 
@@ -816,6 +866,10 @@ header .container{
     color: #FFF;
 }
 
+.footer__menu{
+    width: 30%;
+}
+
 .footer__menu_left{
     display: flex;
     flex-direction: column;
@@ -842,11 +896,7 @@ header .container{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -60px;
-    z-index: 2;
-    position: absolute;
-    right: 0;
-    left: 0;
+    margin-top: -55px;
 }
 
 .brand__link {
@@ -884,10 +934,6 @@ header .container{
 }
 
 .network__item:active{
-    transform: scale(0.9);
-}
-
-.button:active{
     transform: scale(0.9);
 }
 
