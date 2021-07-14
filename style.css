@@ -997,7 +997,7 @@ header .container{
 
 @media screen and (max-width: 768px){
     .container{
-        width: 621px;
+        width: 714px;
     }
 
     h1{
@@ -1005,8 +1005,12 @@ header .container{
         line-height: 60px;
     }
 
-    header{
-        width: 718px;
+   .header .container {
+        margin: 0;
+    }
+
+    .header{
+        width: 700px;
     }
 
     .offer__image{
@@ -1017,8 +1021,17 @@ header .container{
         width: 227px;
     }
 
+    .best-products__item:not(:last-child){
+        margin-right: 18px;
+    }
+
     .best-product__title{
         font-size: 18px;
+        width: 180px;
+    }
+
+    .best-product__description{
+        width: 197px;
     }
 
     .popular-products__list{
@@ -1077,5 +1090,29 @@ header .container{
     .connection .container{
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    .footer:before{
+        content: ''; 
+        position: absolute; 
+        background: url('assets/Polygon1.svg') no-repeat center / cover;
+        height: 82px;
+        width: 757px;
+        left: 0;
+        top: -73px;
+        z-index: 0;
+    }
+
+    .menu__link_footer{
+        font-size: 14px;
+    }
+
+    .brand__title{
+        font-size: 18px;
+    }
+
+    .network__item{
+        width: 35px;
+        height: 35px;
     }
 }
