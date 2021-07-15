@@ -773,6 +773,7 @@ header .container{
     border: none;
     border: none;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 .button__upp{
@@ -781,7 +782,14 @@ header .container{
     height: 24px;
     right: -316px;
     bottom: 135px;
+    /*filter: invert(100%);
+    filter: opacity(100%) drop-shadow(0 0 0 rgb(0, 0, 0)) ;*/
+    filter: saturate(200%);
 }
+
+.button__upp:hover{
+    background: url(assets/testimonials-arrow-u-h.svg) no-repeat center / cover;
+}   
 
 .button__down{
     background: url(assets/testimonials-arrow-d.svg) no-repeat center / cover;
@@ -790,6 +798,11 @@ header .container{
     right: -300px;
     bottom: 95px;
 }
+
+.button__down:hover{
+    background: url(assets/testimonials-arrow-d-h.svg) no-repeat center / cover;
+}   
+
 
 .connection .container{
     display: flex;
