@@ -1063,10 +1063,13 @@ header .container{
         width: 197px;
     }
 
+    .popular-products{
+        margin-top: 50px;
+    }
+
     .popular-products__list{
         justify-content: center;
         align-items: center;
-
     }
 
     .popular-products__item{
@@ -1112,6 +1115,7 @@ header .container{
     .dog-care .container{
         justify-content: center;
         padding-left: 41px;
+        margin-top: 75px;
     }
 
     .dog-care__image{
@@ -1137,6 +1141,7 @@ header .container{
     .about-subscription .container{
         justify-content: center;
         align-items: center;
+        margin-top: 75px;
     }
 
     .about-subscription__list{
@@ -1170,18 +1175,26 @@ header .container{
     .gallery .container{
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 99px;
     }
 
     .gallery__wrapper{
         margin: 0;
     }
+
     .gallery__image_large{
         margin-top: 30px;
+    }
+
+    .testimonials .container{
+        margin-top: 50px;
+        
     }
 
     .connection .container{
         flex-wrap: wrap;
         align-items: center;
+        margin-top: 50px;
     }
 
     .footer:before{
