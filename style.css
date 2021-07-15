@@ -1013,6 +1013,14 @@ header .container{
         line-height: 60px;
     }
 
+    h2{
+        font-size: 28px;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+
    .header .container {
         margin: 0;
     }
@@ -1052,12 +1060,19 @@ header .container{
 
     .best-product__description{
         width: 197px;
-        font-size: 14px;
     }
 
     .popular-products__list{
-        justify-content: space-between;
-        
+        justify-content: center;
+
+    }
+
+    .popular-products__item{
+        margin: 0;
+    }
+
+    .popular-products__item_large:first-child{
+        margin: 0;
     }
 
     .popular-products__item:nth-child(2n){
@@ -1073,6 +1088,23 @@ header .container{
     .popular-products__item_large .popular-product__image{
         width: 202px;
         height: 150px;
+    }
+
+    .popular-product__title{
+        margin-top: 14px;
+        margin-bottom: 15px;
+    }
+
+    .popular-product__button,
+    .popular-products__item_large .popular-product__button{
+        width: 88px;
+        height: 19px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .popular-products__button{
+        margin-top: 10px;
     }
 
     .dog-care__image{
