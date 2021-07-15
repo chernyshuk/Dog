@@ -1015,6 +1015,7 @@ header .container{
 
     h2{
         font-size: 28px;
+       
     }
 
     .description{
@@ -1064,6 +1065,7 @@ header .container{
 
     .popular-products__list{
         justify-content: center;
+        align-items: center;
 
     }
 
@@ -1107,8 +1109,13 @@ header .container{
         margin-top: 10px;
     }
 
+    .dog-care .container{
+        justify-content: center;
+        padding-left: 41px;
+    }
+
     .dog-care__image{
-        width: 330px;   
+        width: 330px; 
     }
 
     .dog-care__wrapper{
@@ -1117,7 +1124,15 @@ header .container{
     }
 
     .dog-care__description {
-        width: 343px;
+        width: 338px;
+    }
+
+    .dog-care__buttons{
+        display: flex;
+    }
+
+    .dog-care__buttons .button_orange{
+        margin-right: 15px;
     }
 
     .about-subscription__list{
