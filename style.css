@@ -1134,9 +1134,14 @@ header .container{
     .dog-care__buttons .button_orange{
         margin-right: 15px;
     }
+    .about-subscription .container{
+        justify-content: center;
+        align-items: center;
+    }
 
     .about-subscription__list{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .subscription__item{
@@ -1147,10 +1152,29 @@ header .container{
         margin-right: 30px;
     }
 
-    .gallery .container{
-        flex-wrap: wrap;
+    .subscription__description{
+        width: 283px;
+        line-height: 16px;
+      
     }
 
+    .subscription__button{
+        margin-top: 28px;
+        margin-bottom: 30px;
+    } 
+
+    .about-subscription__button{
+        margin-top: 20px;
+    }
+
+    .gallery .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery__wrapper{
+        margin: 0;
+    }
     .gallery__image_large{
         margin-top: 30px;
     }
