@@ -1032,7 +1032,7 @@ header .container{
         z-index: 0;
         height: 100vh;
     }
-    
+
     .offer__image{
         width: 406px;
     }
@@ -1052,6 +1052,7 @@ header .container{
 
     .best-product__description{
         width: 197px;
+        font-size: 14px;
     }
 
     .popular-products__list{
