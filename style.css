@@ -1021,18 +1021,6 @@ header .container{
         width: 700px;
     }
 
-    .offer:before{
-        content:'';
-        position: absolute;
-        background: url('assets/offer-bg2.svg') no-repeat right top / cover;
-        height: calc(100% + 150px);
-        width: 80%;
-        right: -65px;
-        top: 0;
-        z-index: 0;
-        height: 100vh;
-    }
-
     .offer__image{
         width: 406px;
     }
