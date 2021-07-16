@@ -803,7 +803,6 @@ header .container{
     background: url(assets/testimonials-arrow-d-h.svg) no-repeat center / cover;
 }   
 
-
 .connection .container{
     display: flex;
     align-items: center;
@@ -1045,8 +1044,8 @@ header .container{
         position: absolute;
         background: url('assets/offer-bg2.svg') no-repeat right top / cover;
         height: calc(100% + 150px);
-        width: 80%;
-        right: -65px;
+        width: 90%;
+        right: -123px;
         top: 0;
         z-index: 0;
         height: 100vh;
@@ -1199,27 +1198,80 @@ header .container{
         margin-top: 50px;
         
     }
-
+    /*
+    .connection .container{
+        display: flex;
+        align-items: center;
+        margin-top: 86px;
+        height: 346px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .connection .container::after{
+        content: '';
+        background: #2E96FF;
+        height: 346px;
+        width: 100%;
+        transform: skew(0, -1.5deg);
+        border-radius: 10px;
+        position: absolute;
+        z-index: -1;
+    }*/
 
     .connection{
-      
         background: #2E96FF;
+    }
+
+    .connection::before{
+        content: '';
+        position: absolute;
+        background: url('assets/connection.svg') no-repeat center / cover;
+        width: 100%;
+        height: 17px;
+        margin-top: -17px;  
+    }
+
+    
+    .connection::after{
+        content: '';
+        position: absolute;
+        background: url('assets/connection.svg') no-repeat center / cover;
+        width: 100%;
+        height: 17px;
+        margin-bottom: -17px; 
+        transform: rotate(180deg); 
     }
 
     .connection .container{
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
         margin-top: 50px;
     }
 
+    .connection .container::after{
+        transform: none;
+    }
+
+
+    .connection__wrapper{
+        margin-top: 58px;
+    }
+
+    .connection__items{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
 
     .footer .container{
+        padding-top: 39px;
         padding-bottom: 42px;
+        margin-top: 155px;
     }
     .footer:before{
         content: ''; 
         position: absolute; 
-        background: url('assets/Polygon1.svg') no-repeat center / cover;
+        background: url('assets/Polygon2.svg') no-repeat center / cover;
         height: 82px;
         width: 100%;
         left: 0;
@@ -1237,6 +1289,10 @@ header .container{
 
     .footer__menu .menu__item:not(:last-child){
         margin-bottom: 18px;
+    }
+
+    .footer__wrapper{
+        margin-top: -35px;
     }
 
     .brand__image{
