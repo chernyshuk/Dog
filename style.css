@@ -1122,6 +1122,10 @@ header .container{
         margin-bottom: 15px;
     }
 
+    h4, .popular-products__item_large .popular-product__title{
+        font-size: 25px;
+    }
+
     .popular-product__button,
     .popular-products__item_large .popular-product__button{
         width: 88px;
@@ -1324,4 +1328,97 @@ header .container{
     }
 
 
+}
+
+@media screen and (max-width: 320px){
+    .contaiher{
+        width: 320px;
+    }
+
+    .button{
+        width: 270px;
+        height: 48px;
+    }
+
+
+    .best-products{
+        margin-bottom: 100px;
+    }
+    .offer__image{
+        width: 272px;
+        height: 255px;
+    }
+
+    .offer:before{
+        content:'';
+        background: none;
+    }
+
+    .best-products__list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .best-products__item{
+        width: 270px;
+        height: 250px;
+        margin: 0;
+    }
+
+    .best-products__item:not(:last-child){
+        margin-top: 25px;
+    }
+
+    .popular-products__list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-products__item {
+        width: 270px;
+    }
+
+    h4, .popular-products__item_large .popular-product__title{
+        font-size: 22px;
+    }
+
+    .dog-care{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .dog-care__image{
+        display: none;
+    }
+
+    .dog-care__description{
+        margin-bottom: 15px;
+    }
+
+    .dog-care__buttons{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .dog-care__buttons .button_orange{
+        margin-bottom: 15px;
+    }
+
+    .about-subscription__list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription__item:not(:last-child){
+        margin-bottom: 50px;
+    }
+    
+    .subscription__title{
+        font-size: 20px;
+    }
+
+    .subscription__description{
+        font-size: 16px;
+    }
 }
