@@ -654,11 +654,9 @@ header .container{
     height: 292px;
 }
 
-
 .testimonials__goast{
     position: absolute;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
-   
 }
 
 .testimonials__goast:nth-of-type(1){
@@ -680,8 +678,7 @@ header .container{
     margin-top: 82px;
     position: relative;
     border-radius: 20px;
-    background: #fff;
-    
+    background: #fff;  
 }
 
 .testimonials__wrapper::before{
@@ -751,6 +748,24 @@ header .container{
     color: rgba(23, 12, 4, 0.6);
     width: 495px;
     margin: 20px 0;
+}
+
+.testimonial__stars{
+    display: flex;
+}
+
+.testimonial__star{
+    background: url('assets/star-g.png');
+    width: 15px;
+    height: 15px;
+}
+
+.testimonial__star_fill{
+    background: url('assets/star-gold.png');
+}
+
+.testimonial__star:not(:last-child){
+    margin-right: 1px;
 }
 
 .testimonial__name{
