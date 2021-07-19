@@ -1253,9 +1253,9 @@ header .container{
         transform: none;
     }
 
-
     .connection__wrapper{
         margin-top: 58px;
+        margin-left: 0;
     }
 
     .connection__items{
