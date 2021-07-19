@@ -1013,8 +1013,7 @@ header .container{
     }
 
     h2{
-        font-size: 28px;
-       
+        font-size: 28px; 
     }
 
     .description{
@@ -1022,11 +1021,10 @@ header .container{
     }
 
    .header .container {
-        margin: 0 25px;
-        
+        margin: 0 25px;  
     }
 
-    .header__menu{
+    .header__menu{ 
         margin-left: 113px;
         margin-right: 80px;
     }
