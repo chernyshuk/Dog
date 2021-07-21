@@ -1017,7 +1017,7 @@ header .container{
 }
 
 @media screen and (max-width: 1300px){
-     .container{
+    .container{
         width: 1000px;
     }
 
@@ -1033,12 +1033,20 @@ header .container{
         justify-content: center;
     }
 
-    .popular-products__item_large .popular-product__image-wrapper{
-        width: 480px;
+    .popular-products__item_large .popular-product__image-wrapper,
+    .popular-product__image-wrapper{
+        width: 450px;
     }
 
     .popular-products__item_large .popular-product__image{
         width: 290px;
+    }
+
+    .popular-products__item:last-child{
+        margin-top: 45px;
+    }
+    .popular-products__item_large .popular-product__button{
+        margin-bottom: 45px;
     }
 
     .dog-care .container{
@@ -1104,8 +1112,17 @@ header .container{
   
 }
 
-@media screen and (max-width: 1195px){
-   
+@media screen and (max-width: 1165px){
+    .container{
+        width: 900px;
+    }
+
+
+
+    .popular-products__item_large .popular-product__image-wrapper,
+    .popular-product__image-wrapper{
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 768px){
