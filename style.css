@@ -1045,12 +1045,19 @@ header .container{
     .popular-products__item:last-child{
         margin-top: 45px;
     }
+
+    .popular-products__item:nth-child(4){
+        margin-right: 0;
+    }
+    
+
     .popular-products__item_large .popular-product__button{
         margin-bottom: 45px;
     }
 
     .dog-care .container{
         justify-content: space-between;
+        margin-top: 100px;
     } 
     
     .dog-care__image{
@@ -1116,13 +1123,67 @@ header .container{
     .container{
         width: 900px;
     }
+ 
+    h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
 
+    .offer:before{
+        content:'';
+        position: absolute;
+        background: url('assets/offer-bg2.svg') no-repeat right top / cover;
+        height: calc(100% + 150px);
+        width: 80%;
+        right: -123px;
+        top: 0;
+        z-index: 0;
+        height: 100vh;
+    }
 
+    .offer__image{
+        width: 550px;
+    }
+
+    .best-products__item{
+        width: 270px;
+    }
+
+    .best-product__title,
+    .best-product__description{
+        width: 250px;
+    }
 
     .popular-products__item_large .popular-product__image-wrapper,
     .popular-product__image-wrapper{
         width: 400px;
     }
+
+    .dog-care__image{
+        width: 380px;
+    }
+
+    .dog-care__wrapper{
+        width: 480px;
+    }
+
+    .connection .container{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+
+    .connection__wrapper{
+        margin-top: 58px;
+        margin-left: 90px;
+    }
+
+    .connection__items{
+        margin-top: 15px;
+        margin-bottom: 58px;
+        margin-left: 90px;
+    }
+
 }
 
 @media screen and (max-width: 768px){
