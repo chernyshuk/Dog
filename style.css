@@ -144,6 +144,23 @@ h4{
     font-weight: 400;
 }
 
+
+
+
+
+#hamburger{
+    display: none;
+}
+
+#hamburger + label{
+    display: none;
+}
+
+
+
+
+
+
 .header{
     position: fixed;
     z-index: 100;
@@ -1186,6 +1203,236 @@ header .container{
 
 }
 
+@media screen and (max-width: 990px){
+    .container{
+        width: 760px;
+    }
+
+    h1{
+        font-size: 75px;
+        line-height: 75px;
+    }
+
+    h2{
+        font-size: 30px; 
+    }
+
+    .offer__image{
+        width: 450px;
+    }
+
+    .best-products__item{
+        width: 235px;
+    }
+
+    .best-product__title,
+    .best-product__description{
+        width: 220px;
+    }
+
+    .best-product__description{
+        font-size: 14px;
+    }
+
+    .popular-products__item_large .popular-product__image-wrapper,
+    .popular-product__image-wrapper{
+        width: 350px;
+    }
+
+    .dog-care__image{
+        width: 350px;
+        margin-left: -30px;
+    }
+
+    .dog-care__wrapper{
+        width: 420px;
+        margin-left: 10px;
+    }
+
+    .dog-care__description{
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .connection .container{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+
+    .connection__wrapper{
+        margin-top: 58px;
+        margin-left: 90px;
+    }
+
+    .connection__items{
+        margin-top: 15px;
+        margin-bottom: 58px;
+        margin-left: 90px;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .best-product__description{
+        font-size: 14px;
+    }
+
+    .popular-products__item_large .popular-product__image-wrapper,
+    .popular-product__image-wrapper{
+        width: 350px;
+    }
+
+
+    .footer .container{
+        padding-top: 39px;
+        padding-bottom: 42px;
+        margin-top: 155px;
+    }
+    .footer:before{
+        content: ''; 
+        position: absolute; 
+        background: url('assets/Polygon2.svg') no-repeat center / cover;
+        height: 82px;
+        width: 100%;
+        left: 0;
+        top: -73px;
+        z-index: 0;
+    }
+
+    .menu__link_footer{
+        font-size: 14px;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    .footer__menu .menu__item:not(:last-child){
+        margin-bottom: 18px;
+    }
+
+    .footer__wrapper{
+        margin-top: -35px;
+    }
+
+    .brand__image{
+        margin-top: -30px;
+        z-index: 2;
+    }
+
+    .brand__title{
+        font-size: 18px;
+        margin-bottom: 42px;
+    }
+
+    .network__item{
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    .container{
+        width: 740px;
+    }
+
+    h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .header .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .offer__image{
+        width: 406px;
+    }
+
+    .best-products__item{
+        width: 227px;
+    }
+
+    .best-products__item:not(:last-child){
+        margin-right: 18px;
+    }
+
+    .best-product__title{
+        font-size: 18px;
+        width: 180px;
+    }
+
+    .best-product__description{
+        width: 197px;
+    }
+
+    .popular-products{
+        margin-top: 50px;
+    }
+
+    .popular-products__list{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-products__item{
+        margin: 0;
+    }
+
+    .popular-products__item_large:first-child{
+        margin: 0;
+    }
+
+    .popular-products__item:nth-child(2n){
+        margin-left: 15px;
+    }
+
+    .popular-product__image-wrapper, 
+    .popular-products__item_large .popular-product__image-wrapper{
+        width: 303px;
+        height: 304px;
+    }
+
+    .popular-products__item_large .popular-product__image{
+        width: 202px;
+        height: 150px;
+    }
+
+    .popular-product__title{
+        margin-top: 14px;
+        margin-bottom: 15px;
+    }
+
+    h4, .popular-products__item_large .popular-product__title{
+        font-size: 25px;
+    }
+
+    .popular-product__button,
+    .popular-products__item_large .popular-product__button{
+        width: 88px;
+        height: 19px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .popular-products__button{
+        margin-top: 10px;
+    }
+
+    .dog-care__wrapper{
+        margin-left: 30px;
+        width: 343px;
+    }
+}
+
+@media screen and (max-width: 890px){
+     
+}
+
 @media screen and (max-width: 768px){
     .container{
         width: 714px;
@@ -1493,6 +1740,49 @@ header .container{
     }
 
 
+
+
+
+
+    #hamburger + label{
+        display: block;  
+    }
+
+   
+
+    #hamburger:not(:checked) ~ nav{
+        display: none;
+    }  
+
+    #hamburger:checked ~ nav{
+    
+        
+    } 
+
+    .header__menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform .5s ease-in-out;
+    }
+
+    /*.heading__hamburger-input:not(:checked) ~ .heading__menu{
+        transform: translateX(-100%);
+    }  
+
+    .heading__hamburger-input:checked ~ .heading__menu{
+        transform: translateX(0);
+    } */
+
+
+
 }
 
 @media screen and (max-width: 320px){
@@ -1681,6 +1971,12 @@ header .container{
         right: 0;
         top: 10px;
     }
+
+
+
+
+
+
 
 
     }

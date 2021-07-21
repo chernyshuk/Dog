@@ -16,6 +16,15 @@
                     <p class="logo__title">Dog </p>
                 </a> 
             </div>
+
+
+            <input class="actions__image heading__hamburger-input" type="checkbox" id="hamburger" src="assets/header3.png" alt="Меню"/>
+            <label  for="hamburger">
+                <div class="heading__hamburger">
+                    <img class="actions__image" src="assets/header3.png" alt="Меню"/>
+                </div>
+            </label>
+
             <nav class="header__menu menu">
                 <li class="menu__item">
                     <a class="menu__link link" href="#Popular-products">Products</a>
@@ -36,12 +45,6 @@
                 </li>
                 <li class="actions__item">
                     <img class="actions__image" src="assets/header2.png" alt="Корзина"/>
-                </li>
-                <li class="actions__item">
-                    <input class="actions__image heading__hamburger-input" type="checkbox" id="hamburger" src="assets/header3.png" alt="Меню"/>
-                    <label  for="hamburger">
-                        <div class="heading__hamburger"></div>
-                    </label>
                 </li>
             </ul>
         </div>
@@ -321,5 +324,15 @@
             }));
        }
    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', onLoad);
+
+    function onLoad(){
+        document.querySelectorAll('.menu__link')
+        .forEach(x=>x.addEventListener('click', e => 
+            document.querySelector('.heading__hamburger-input').checked = false))
+    }
+</script>
 </body>
 </html>
