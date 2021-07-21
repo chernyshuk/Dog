@@ -255,6 +255,7 @@ header .container{
     transform: scale(0.9);
 }
 
+
 .offer{
     height: 100vh;
     padding-top: 70px;
@@ -1015,7 +1016,97 @@ header .container{
     margin-left: 25px;
 }
 
+@media screen and (max-width: 1300px){
+     .container{
+        width: 1000px;
+    }
 
+    .best-products__item{
+        width: 300px;
+    }
+    
+    .best-product__title{
+        font-size: 22px;
+    }
+
+    .popular-products__list{
+        justify-content: center;
+    }
+
+    .popular-products__item_large .popular-product__image-wrapper{
+        width: 480px;
+    }
+
+    .popular-products__item_large .popular-product__image{
+        width: 290px;
+    }
+
+    .dog-care .container{
+        justify-content: space-between;
+    } 
+    
+    .dog-care__image{
+        width: 400px;
+        margin: 0; 
+    }
+
+    .dog-care__wrapper{
+        margin-left: 0;
+        width: 530px;
+    }
+
+    .about-subscription .container{
+        justify-content: center;
+    }
+
+    .about-subscription__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscription__item{
+        width: 360px;
+    }
+
+    .subscription__item:not(:first-child){
+        margin-left: 0;
+    }
+
+    .subscription__item:first-child{
+        margin-right: 30px;
+    }
+
+    .subscription__item:last-child{
+        margin-top: 20px;
+    }
+    
+    .gallery .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 99px;
+    }
+
+    .gallery__wrapper{
+        margin: 0;
+    }
+
+    .gallery__image_large{
+        margin-top: 30px;
+    }
+
+    .connection__wrapper{
+        margin-right: 0;
+    }
+
+    .connection__input{
+        width: 335px;
+    }
+  
+}
+
+@media screen and (max-width: 1195px){
+   
+}
 
 @media screen and (max-width: 768px){
     .container{
@@ -1177,10 +1268,6 @@ header .container{
 
     .subscription__item{
         width: 281px;
-    }
-
-    .subscription__item:first-child{
-        margin-right: 30px;
     }
 
     .subscription__description{
@@ -1458,4 +1545,64 @@ header .container{
         width: 124px;
         height: 114px;
     }
-}
+
+    .testimonials__goast,
+    .testimonials__shell{
+        width: 310px;
+        height: 403px;
+    }
+
+    .testimonials__goast{
+        transform: none;
+    }
+
+    .testimonials__wrapper{
+        margin: 45px 20px;
+    }
+
+    .testimonial__foto{
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial__description{
+        width: 270px;
+        height: 118px;
+    }
+
+    .testimonial__position{
+        color: rgba(23, 12, 4, 0.7);
+    }
+
+
+    
+    .testimonials__buttons{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        transform: rotate(90deg);
+    
+    }
+
+    .button__upp{
+        background: url(assets/testimonials-arrow-u.svg) no-repeat center / cover;
+        width: 13px;
+        height: 24px;
+        right: 0;
+        bottom: 10px;
+        /*filter: invert(100%);
+        filter: opacity(100%) drop-shadow(0 0 0 rgb(0, 0, 0)) ;*/
+        filter: saturate(200%);   
+    }
+    
+
+    .button__down{
+        background: url(assets/testimonials-arrow-d.svg) no-repeat center / cover;
+        width: 12px;
+        height: 22px;
+        right: 0;
+        top: 10px;
+    }
+
+
+    }
