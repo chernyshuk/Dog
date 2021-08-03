@@ -160,7 +160,6 @@ h4{
 
 
 
-
 .header{
     position: fixed;
     z-index: 100;
@@ -378,16 +377,18 @@ header .container{
 }
 
 .popular-products{
-    margin-top: 120px;
+    margin-top: 120px;  
+    position: relative;
 }
 
 .popular-products::before {
     content: '';
-    border-left: 1px solid #ebebeb;
-    height: 120px;
-    margin-left: 950px;
+    background-color: #ebebeb;
+    height: 100px;
+    left: 50%;
+    width: 1px;
     position: absolute;
-    margin-top: -120px;
+    top: -120px;
 }
 
 .popular-products .container{
@@ -809,7 +810,7 @@ header .container{
     transition: all 0.3s ease-in-out;
 }
 
-.button__upp{
+.button__up{
     background: url(assets/testimonials-arrow-u.svg) no-repeat center / cover;
     width: 13px;
     height: 24px;
@@ -820,7 +821,7 @@ header .container{
     filter: saturate(200%);
 }
 
-.button__upp:hover{
+.button__up:hover{
     background: url(assets/testimonials-arrow-u-h.svg) no-repeat center / cover;
 }   
 
@@ -1338,7 +1339,7 @@ header .container{
     .container{
         width: 740px;
     }
-
+    
     h1{
         font-size: 60px;
         line-height: 60px;
@@ -1480,12 +1481,12 @@ header .container{
     }
 
    .header .container {
-        margin: 0 25px;  
+        margin: 0;  
     }
 
     .header__menu{ 
-        margin-left: 113px;
-        margin-right: 80px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .header__menu .menu__item:not(:first-child){
@@ -1506,6 +1507,7 @@ header .container{
         top: 0;
         z-index: 0;
         height: 100vh;
+   
     }
 
     .offer__image{
@@ -1774,17 +1776,16 @@ header .container{
 
     #hamburger + label{
         display: block;
+     
     
     }
 
-   
-
     #hamburger:not(:checked) ~ nav{
-        display: none;
+        transform: translateX(100%);
     }  
 
     #hamburger:checked ~ nav{
-    
+        transform: translateX(0);
         
     } 
 
@@ -1792,7 +1793,8 @@ header .container{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: rgb(83, 83, 83);
+        background-color: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(15px);
         top: 0;
         left: 0;
         display: flex;
@@ -1802,15 +1804,19 @@ header .container{
         transition: transform .5s ease-in-out;
     }
 
-    /*.heading__hamburger-input:not(:checked) ~ .heading__menu{
-        transform: translateX(-100%);
-    }  
+    .header__menu .menu__item:not(:first-child){
+        margin-left: 0;
+    }
 
-    .heading__hamburger-input:checked ~ .heading__menu{
-        transform: translateX(0);
-    } */
+    .menu__link{
+        display: block;
+        margin: 15px;
+        font-size: 20px;
+    }
 
-
+    .menu__item::before{
+        bottom: 3px;
+    }
 
 }
 
@@ -1981,7 +1987,7 @@ header .container{
     
     }
 
-    .button__upp{
+    .button__up{
         background: url(assets/testimonials-arrow-u.svg) no-repeat center / cover;
         width: 13px;
         height: 24px;
