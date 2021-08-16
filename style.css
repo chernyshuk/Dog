@@ -1350,6 +1350,16 @@ header .container{
         width: 197px;
     }
 
+    .popular-products::before {
+        content: '';
+        background-color: #ebebeb;
+        height: 50px;
+        left: 50%;
+        width: 1px;
+        position: absolute;
+        top: -50px;
+    }
+
     .popular-products{
         margin-top: 50px;
     }
@@ -1646,8 +1656,7 @@ header .container{
     }
 
     .testimonials .container{
-        margin-top: 50px;
-        
+        margin-top: 50px; 
     }
     
     .connection{
@@ -1739,9 +1748,6 @@ header .container{
         width: 35px;
         height: 35px;
     }
-
-
-
 
 
 
